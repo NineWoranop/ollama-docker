@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  my-ollama:
+    build:
+      context: .
+      dockerfile: ollama-devstral-24b.Dockerfile
+    ports:
+      - 11434:11434
+    restart: unless-stopped
