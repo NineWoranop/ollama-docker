@@ -19,4 +19,5 @@ RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/* && 
    chmod +x /entrypoint.sh && \
    /entrypoint.sh
 
-CMD ["ollama", "serve"]
+ENTRYPOINT ["/bin/ollama"]
+CMD ["serve"]

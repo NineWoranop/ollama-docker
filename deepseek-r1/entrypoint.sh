@@ -14,6 +14,6 @@ echo "Ollama server is ready."
 
 # Pull the specified model
 echo "Pulling model: $MODEL_TO_PULL"
-ollama pull "$MODEL_TO_PULL"
+/bin/ollama pull "$MODEL_TO_PULL"
 
 echo "Pulling model: $MODEL_TO_PULL has been done."

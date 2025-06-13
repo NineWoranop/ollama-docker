@@ -1,4 +1,4 @@
-# ollama-deepseek-r1-1-5b.Dockerfile
+# ollama-deepseek-r1-8b.Dockerfile
 # Use the official Ollama base image.
 FROM ollama/ollama:latest
 
@@ -6,7 +6,7 @@ FROM ollama/ollama:latest
 # Changed OLLAMA_KEEP_ALIVE to -1 to keep models loaded indefinitely
 # Define the model you want to pre-load
 ENV OLLAMA_KEEP_ALIVE=-1 \
-    MODEL_TO_PULL="deepseek-r1:1.5b"
+    MODEL_TO_PULL="deepseek-r1:8b"
 
 # Expose the default Ollama port
 EXPOSE 11434
